@@ -1,6 +1,6 @@
 /* -------------------- CSS BY PETER VELEZ ----------------------- */
+
 /* -------------------- IMPORTED FONTS -------------------- */
-@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
 
 /*------------------ CSS RESET -----------------------*/
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -59,4 +59,248 @@ table {
     --teal: #7ABFBF;
     --lt-teal: rgba(122, 191, 191, .5);
     --orange: #EB5428;
+}
+
+h1, h2, h3, nav a, nav span, menu li, #social li, footer {
+    font-family: "Bebas Neue", serif;
+    font-style: normal;
+}
+
+p, dd, li, nav, input {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+body {
+    min-width: 414px;
+    background-color: var(--lt-teal);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a, nav span, menu li, #social li, footer {
+    font-size: 20px;
+}
+
+p, dd, li, nav, input, dt {
+    font-size: 16px;
+}
+
+header p {
+    padding: 20px 10px 20px 10px;
+    background-color: var(--lt-gray);
+    line-height: 1.25em;
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+.details dt{
+    float: left;
+    clear: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.details {
+    display: block;
+    background-color: var(--lt-gray);
+    padding: 20px 0 20px 0;
+}
+
+.details h2 {
+    text-align: center;
+}
+
+.ingredients {
+    display: block;
+    background-color: var(--lt-gray);
+    padding: 10px 0 10px 0;
+}
+
+.ingredients h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.ingredients ul {
+    list-style-position: inside;
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+.ingredients li {
+    margin-bottom: 30px;
+}
+
+.directions {
+    display: block;
+    background-color: var(--lt-gray);
+}
+
+.directions h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.directions ol {
+    display: list-item;
+    list-style-type: inside;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.directions li {
+    padding-left: 30px;
+    line-height: 3em;
+    padding-bottom: 30px;
+}
+
+aside h2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: var(--teal);
+}
+
+.rating {
+    background-color: var(--teal);
+    padding-bottom: 100px;
+    padding-left: 40px;
+}
+
+.rating::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.rating img {
+    float: left;
+    margin-right: 40px;
+}
+
+.rating h3 {
+    padding-bottom: 30px;
+}
+
+.rating p {
+    padding-bottom: 20px;
+}
+
+.rating h4 {
+    padding-bottom: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+}
+
+nav {
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;
+    z-index:5;
+}
+nav ul {
+    grid-area: hamberger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+nav li img {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+nav span {
+    display: block;
+    position: relative;
+ }
+nav label svg {
+    display: block;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 550px;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+footer h2, footer h3 {
+    visibility: hidden;
+}
+
+footer menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+div.sm {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+div.sm p {
+    font-weight: bold;
+    font-size: 40px;
+    color: #EB5428;
+    font-family: "Bebas Neue";
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+footer h2 {
+    background-color: #F2F2F2;
+}
+
+.copyright img {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.copyright p {
+    text-align: center;
+    font-weight: bold;
 }
