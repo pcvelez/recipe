@@ -201,6 +201,7 @@ header form {
     position: relative;
     bottom: -200px;
     width: 250px;
+    padding-top: 50px;
 }
 
 menu {
@@ -532,4 +533,16 @@ footer img {
 footer p {
     font-family: "Bebas Neue";
     font-size: 40px;
+}
+
+@media screen and (min-width: 768px) {
+
+header form {
+    display: none;
+}
+
+nav form {
+    display: flex;
+}
+
 }
