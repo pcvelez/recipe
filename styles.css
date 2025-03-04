@@ -545,4 +545,86 @@ nav form {
     display: flex;
 }
 
+header {
+    background-color: var(--lt-gray)
+}
+
+h1 {
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+}
+
+section.details dl {
+    padding-left: 350px;
+}
+
+section.details dt {
+    font-size: 20px;
+    justify-content: center;
+}
+
+main div {
+    display: flex;
+    flex-direction: row;
+}
+
+section.ingredients {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+section.directions {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+}
+
+section.directions ol {
+    padding-top: 20px;
+}
+
+section.directions h2 {
+    padding-top: 28px;
+}
+
+main #rate {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+main section.h2 {
+    text-align: center;
+    background-color: #7ABFBF;
+}
+
+section.h2 h2 {
+    padding: 20px 0 20px 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.copyright img {
+    scale: 50%;
+}
+
+section.copyright p {
+    margin-top: -50px;
+    padding-bottom: 50px;
+}
+
+div.sm p {
+    text-size-adjust: 70%;
+    padding-right: 20px;
+}
+
+div.sm svg {
+    padding-right: 20px;
+}
+
 }
